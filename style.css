@@ -102,20 +102,15 @@ justify-content: space-around;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 15px;
     height: 90px;
-    margin: 0;
-    word-wrap:break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .main-number{
     font-size: 2.5rem;
-    display: flex;
-    justify-content: end;
-    padding-right: 10px;
-
 }
 .second-number{
     font-size: 1.5rem;
-    display: flex;
-    justify-content: end;
-    padding-right:10px ;
 }
