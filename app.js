@@ -16,9 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
     
     numbers.forEach((number) => number.addEventListener('click', function (e) {
         handelNumber(e.target.textContent)
+        main.textContent=mainNum
+    }))
+    operators.forEach((opera) => opera.addEventListener('click', function (e) {
+        handelOperator(e.target.textContent)
+        second.textContent = secondNum + "" + operator;
+        main.textContent = mainNum;
     }))
 })
 
 function handelNumber(num) {
-    console.log(num);
+    if (mainNum.length<=7) {
+        mainNum += num
+    }
+}
+
+function handelOperator(opera) {
+    operator = opera;
+    secondNum = mainNum;
+    mainNum=''
 }
